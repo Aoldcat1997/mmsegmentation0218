@@ -17,7 +17,7 @@ from .isprs import ISPRSDataset
 from .levir import LEVIRCDDataset
 from .lip import LIPDataset
 from .loveda import LoveDADataset
-from .mapillary import MapillaryDataset_v1, MapillaryDataset_v2
+# from .mapillary import MapillaryDataset_v1, MapillaryDataset_v2
 from .night_driving import NightDrivingDataset
 from .nyu import NYUDataset
 from .pascal_context import PascalContextDataset, PascalContextDataset59
@@ -39,7 +39,7 @@ from .transforms import (CLAHE, AdjustGamma, Albu, BioMedical3DPad,
                          ResizeShortestEdge, ResizeToMultiple, RGB2Gray,
                          SegRescale)
 from .voc import PascalVOCDataset
-
+from .GLC import GLCDataset
 # yapf: enable
 __all__ = [
     'BaseSegDataset', 'BioMedical3DRandomCrop', 'BioMedical3DRandomFlip',
@@ -60,5 +60,5 @@ __all__ = [
     'MapillaryDataset_v2', 'Albu', 'LEVIRCDDataset',
     'LoadMultipleRSImageFromFile', 'LoadSingleRSImageFromFile',
     'ConcatCDInput', 'BaseCDDataset', 'DSDLSegDataset', 'BDD100KDataset',
-    'NYUDataset'
+    'NYUDataset','GLCDataset'
 ]
