@@ -2,6 +2,7 @@
 dataset_type = 'ADE20KDataset'
 data_root = 'data/ade/ADEChallengeData2016'
 crop_size = (512, 512)
+# test
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', reduce_zero_label=True),
